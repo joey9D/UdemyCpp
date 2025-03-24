@@ -18,21 +18,16 @@ int main()
 
     if ((number >= 0) && (number <= 10))
     {
-        if (number == 4)
-        {
+        if (number == 4) {
             std::cout << "You won!" << std::endl;
         }
-        else if (number == 2)
-        {
+        else if (number == 2) {
             std::cout << "You won wooden spoon!" << std::endl;
         }
-        else
-        {
+        else {
             std::cout << "You lost!" << std::endl;
         }
-    }
-    else
-    {
+    } else {
         std::cout << "You entered an invalid number!" << std::endl;
     }
 

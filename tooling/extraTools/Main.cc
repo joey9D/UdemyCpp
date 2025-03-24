@@ -3,17 +3,17 @@
 
 int main()
 {
-    const auto length = std::size_t{4};
+    const auto length = std::size_t{ 4 };
     auto arr = new std::int32_t[length];
 
-    if (!arr)
+    if ( !arr )
     {
         return 1;
     }
 
-    for (std::size_t i = 0; i < length + 1; i++)
+    for ( std::size_t i = 0; i < length + 1; i++ )
     {
-        arr[i] = static_cast<std::int32_t>(i);
+        arr[i] = static_cast<std::int32_t>( i );
         std::cout << arr[i] << '\n';
     }
 

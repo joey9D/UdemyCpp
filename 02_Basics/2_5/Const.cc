@@ -1,6 +1,7 @@
 #include <cstdint>
 #include <iostream>
 
+
 int func(const int val)
 {
     const int temp = val * 2;
@@ -11,7 +12,8 @@ int func(const int val)
 int main()
 {
     int v = 2;
-    std::cout << func(v) << '\n';
+    int res = func(v);
+    std::cout << res << '\n';
 
     return 0;
 }

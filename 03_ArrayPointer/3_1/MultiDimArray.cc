@@ -19,8 +19,10 @@ int main()
     {
         for (int j = 0; j < 2; j++)
         {
-            std::cout << my_matrix2[i][j] << '\n';
+            std::cout << my_matrix1[i][j] << ' ';
+            //std::cout << my_matrix2[i][j] << ' ';
         }
+        std::cout << '\n';
     }
 
     return 0;

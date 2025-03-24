@@ -24,5 +24,13 @@ int main()
     // 8 Byte = 64 Bit
     double my_dbl = 10.0;
 
+    std::cout << "data types: " << std::endl;
+    std::cout << "char: " << my_char << std::endl;
+    std::cout << "short: " << my_short << std::endl;
+    std::cout << "int: " << my_int << std::endl;
+    std::cout << "long long: " << my_ll << std::endl;
+    std::cout << "float:  " << my_float << std::endl;
+    std::cout << "double: " << my_dbl << std::endl;
+
     return 0;
 }

@@ -10,6 +10,15 @@
 
 int main()
 {
+    double input_value = 0.0;
+
+    std::cout << "Enter a number: ";
+    std::cin >> input_value;
+
+    if (input_value < 0.0){
+        input_value = input_value * (-1.0);
+    }
+     std::cout << "Absolute value = " << input_value << std::endl;
 
     return 0;
 }

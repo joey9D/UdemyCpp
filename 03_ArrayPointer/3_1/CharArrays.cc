@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 
     for (std::uint32_t i = 0; i < sizeof(last_name) - 1U; ++i)
     {
-        std::cout << "Char[i] = " << last_name[i] << '\n';
+        std::cout << "Char "<< i << " = " << last_name[i] << '\n';
     }
 
     return 0;

@@ -4,25 +4,19 @@
 int main()
 {
     // bool: true/false
-    // [0, 10]
+    // [0, 10] -> inclusive range borders
 
     std::uint32_t number;
     std::cout << "Please enter your guess: ";
     std::cin >> number;
 
-    if ((number >= 0) && (number <= 10))
-    {
-        if (number == 4)
-        {
+    if ((number >= 0) && (number <= 10)) {
+        if (number == 4)        {
             std::cout << "You won!\n";
-        }
-        else
-        {
+        } else {
             std::cout << "You lost!\n";
         }
-    }
-    else
-    {
+    } else {
         std::cout << "You entered an invalid number!\n";
     }
 

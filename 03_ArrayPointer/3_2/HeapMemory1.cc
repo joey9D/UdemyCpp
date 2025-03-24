@@ -2,6 +2,10 @@
 
 int main()
 {
+    /**
+     * pointer points to the heap.
+     * pointer itself does not exist on the heap
+     */
     int *p = new int;
     *p = 4;
 

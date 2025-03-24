@@ -1,7 +1,7 @@
 DEBUG_FLAGS = -O0 -g3
 RELEASE_FLAGS = -O3
 
-FLAGS = $(RELEASE_FLAGS)
+FLAGS = $(DEBUG_FLAGS)
 
 preprocess:
 	g++ $(FLAGS) -E Functions2.cc > Temp.cc

@@ -13,8 +13,14 @@ int main()
         older_age1 = age2;
 
     // 2.) Ternary Operator
+    //                if true, older_age gets value of age1
+    //                if false, older_age gets value of age2
+//
     //                BOOL EXPR  ? TRUE : FALSE;
     int older_age2 = age1 > age2 ? age1 : age2;
+
+    std::cout << "older_age1: " << older_age1 << std::endl;
+    std::cout << "older_age2: " << older_age2 << std::endl;
 
     return 0;
 }

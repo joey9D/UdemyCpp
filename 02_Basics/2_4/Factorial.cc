@@ -14,7 +14,7 @@ unsigned int faculty(unsigned int n)
 
 int main()
 {
-    unsigned int n = 0;
+    unsigned int n = 5;
     unsigned int n_fac = faculty(n);
 
     std::cout << n << "! = " << n_fac << std::endl;

@@ -9,16 +9,13 @@ int main()
     char move;
     std::cin >> move;
 
-    if (LEFT == move)
-    {
+    if (LEFT == move) {
         std::cout << "The player moved to the left!\n";
     }
-    else if (RIGHT == move)
-    {
+    else if (RIGHT == move) {
         std::cout << "The player moved to the right!\n";
     }
-    else
-    {
+    else {
         std::cout << "Unrecognized move!\n";
     }
 

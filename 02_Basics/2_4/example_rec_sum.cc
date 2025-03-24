@@ -3,7 +3,10 @@
 
 std::uint32_t sum(std::uint32_t n)
 {
+    if (n > 0)
+        return n + sum(n-1);
 
+    return 0;
 }
 
 int main()

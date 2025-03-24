@@ -8,7 +8,7 @@ Deswegen müsst ihr diese nicht selber lösen, ihr könnt es aber gerne probiere
 ## Vorwort
 
 Wir werden in den ComputerGame Abschnitten ein kleines Spiel programmieren, wo sich der Spieler auf, zuerst einem 1D Spielbrett, nach links und rechts bewegen kann.  
-Später wird dies auch ein 2D-Spielbrett sein mit zusätzlichen Hindernissen. 
+Später wird dies auch ein 2D-Spielbrett sein mit zusätzlichen Hindernissen.  
 Da wir aktuell noch nicht so weit sind, werden wir uns jetzt erstmal um die Links/Rechts Steuerung kümmern.  
 
 ## Exercise 1

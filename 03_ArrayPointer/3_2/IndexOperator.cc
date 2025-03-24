@@ -5,16 +5,18 @@ void print_array1(const std::int32_t *arr, const std::size_t len)
 {
     for (std::size_t i = 0; i < len; i++)
     {
-        std::cout << arr[i] << '\n';
+        std::cout << arr[i] << ' ';
     }
+    std::cout << "\n";
 }
 
 void print_array2(const std::int32_t *arr, const std::size_t len)
 {
     for (std::size_t i = 0; i < len; i++)
     {
-        std::cout << *(arr + i) << '\n';
+        std::cout << *(arr + i) << ' ';
     }
+    std::cout << "\n";
 }
 
 int main()

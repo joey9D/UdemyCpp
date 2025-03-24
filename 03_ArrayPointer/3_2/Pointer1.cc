@@ -1,7 +1,8 @@
 #include <iostream>
-
-// &: Reference
-// *p: De-reference
+/**
+ * &: Reference -> Memory Address
+ * *p: De-reference -> Value of that memory address
+ */
 
 int main()
 {

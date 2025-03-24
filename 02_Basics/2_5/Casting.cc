@@ -3,6 +3,7 @@
 // 1a. C++: static_cast<newDtype>(varName)
 // 1b. C: (newDtype)(varName)
 // Easier to read, less prone to errors
+// Better to use C++ style
 
 int main()
 {
