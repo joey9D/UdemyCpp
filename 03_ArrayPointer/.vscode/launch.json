@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/03_ArrayPointer/_Exercise2/Exercise",
-      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/03_ArrayPointer/_Exercise2/Exercise/build/Debug/outDebug"
+      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/03_ArrayPointer/_Exercise3/Exercise",
+      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/03_ArrayPointer/_Exercise3/Exercise/build/Debug/outDebug"
     }
   ]
 }

@@ -21,5 +21,8 @@ int main()
     *c += 10;
     print_int_pointer(d);
 
+    d += 1;
+    print_int_pointer(d);
+
     return 0;
 }
