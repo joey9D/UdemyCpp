@@ -4,19 +4,19 @@ void copy(int v) // copy - Input but modifiable
 {
     v *= 2;
     std::cout << "f1: " << v << '\n';
-    std::cout << &v << '\n';
+    std::cout << "Input mod: " << &v << '\n';
 }
 
 void copy_const(const int v) // const - Input only because of const
 {
     std::cout << "f1: " << v << '\n';
-    std::cout << &v << '\n';
+    std::cout << "Copy Input only: " <<  &v << '\n';
 }
 
 void reference_input(const int &v) // Input only because of const
 {
     std::cout << "f3: " << v << '\n';
-    std::cout << &v << '\n';
+    std::cout << "Ref Input only: " << &v << '\n';
 }
 
 void reference_in_output(int &v) // Input and Output
@@ -24,7 +24,7 @@ void reference_in_output(int &v) // Input and Output
     v = v * 2; // In and Output
     v = 2;     // Output only
     std::cout << "f3: " << v << '\n';
-    std::cout << &v << '\n';
+    std::cout << "Ref In-/Output: " << &v << '\n';
 }
 
 int main()
