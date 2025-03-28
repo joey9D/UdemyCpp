@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/04_MoreBasics",
+      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/04_MoreBasics/build/Debug/outDebug"
+    }
+  ]
+}

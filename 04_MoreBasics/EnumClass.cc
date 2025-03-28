@@ -62,5 +62,13 @@ int main()
     peter.permission_level = PermissionLevel::STUDENT;
     greet_user(peter);
 
+    UserData me = {"Joey", 29, PermissionLevel::STUDENT};
+    greet_user(me);
+
+    UserData me2;
+    me2.name = "Bob";
+    me2.permission_level = PermissionLevel::TUTOR;
+    greet_user(me2);
+
     return 0;
 }
