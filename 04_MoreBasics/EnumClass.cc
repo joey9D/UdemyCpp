@@ -17,11 +17,11 @@ struct UserData
     PermissionLevel permission_level;
 };
 
-void greet_user(UserData &user)
+void greet_user( UserData &user )
 {
     std::cout << user.name << " has the id " << user.id << " and is a ";
 
-    switch (user.permission_level)
+    switch ( user.permission_level )
     {
     case PermissionLevel::STUDENT:
     {
@@ -53,22 +53,22 @@ void greet_user(UserData &user)
 
 int main()
 {
-    UserData jan = {"Jan", 24, PermissionLevel::INSTRUCTOR};
-    greet_user(jan);
+    UserData jan = { "Jan", 24, PermissionLevel::INSTRUCTOR };
+    greet_user( jan );
 
     UserData peter;
     peter.name = "Peter";
     peter.id = 48;
     peter.permission_level = PermissionLevel::STUDENT;
-    greet_user(peter);
+    greet_user( peter );
 
-    UserData me = {"Joey", 29, PermissionLevel::STUDENT};
-    greet_user(me);
+    UserData me = { "Joey", 29, PermissionLevel::STUDENT };
+    greet_user( me );
 
     UserData me2;
     me2.name = "Bob";
     me2.permission_level = PermissionLevel::TUTOR;
-    greet_user(me2);
+    greet_user( me2 );
 
     return 0;
 }
