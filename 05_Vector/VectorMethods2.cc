@@ -6,7 +6,7 @@ void print_vector(const std::vector<std::int32_t> &my_vector)
 {
     for (std::size_t i = 0; i < my_vector.size(); ++i)
     {
-        std::cout << my_vector[i] << '\n';
+        std::cout << my_vector[i] << ' ';
     }
     std::cout << '\n';
 }
