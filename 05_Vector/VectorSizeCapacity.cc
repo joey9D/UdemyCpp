@@ -19,5 +19,20 @@ int main()
     std::cout << "Size: " << my_vector.size() << '\n';
     std::cout << "Capacity: " << my_vector.capacity() << '\n';
 
+    my_vector.push_back(10);
+    my_vector.push_back(10);
+    my_vector.push_back(10);
+    my_vector.push_back(10);
+    my_vector.push_back(10);
+    my_vector.push_back(10);
+
+    std::cout << "Size: " << my_vector.size() << '\n';
+    std::cout << "Capacity: " << my_vector.capacity() << '\n';
+
+    my_vector.push_back(10);
+
+    std::cout << "Size: " << my_vector.size() << '\n';
+    std::cout << "Capacity: " << my_vector.capacity() << '\n';
+
     return 0;
 }
