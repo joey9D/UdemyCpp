@@ -6,34 +6,51 @@
 
 void fill_vector(std::vector<double> &vec)
 {
-    for (std::size_t i = 0; i < vec.size(); i++)
+    // for (std::size_t i = 0; i < vec.size(); i++)
+    // {
+    //     vec[i] = static_cast<double>(i);
+    // }
+    // Laufvariable ist/muss trotzdem noch dabei sein.
+    for (int i = 0; double &val : vec)
     {
-        vec[i] = static_cast<double>(i);
+        val = static_cast<double>(i);
+        i++;
     }
 }
 
 void print_vector(const std::vector<double> &vec)
 {
-    for (std::size_t i = 0; i < vec.size(); i++)
+    // for (const double &val : vec)
+    // {
+    //     std::cout << val << ' ';
+    // }
+
+    for (int i = 0; const double &val : vec)
     {
-        std::cout << "Vec[" << i << "] = " << vec[i] << '\n';
+        std::cout << val << " ";
+        i++;
     }
     std::cout << '\n';
 }
 
 void exp_vector(std::vector<double> &vec)
 {
-    for (std::size_t i = 0; i < vec.size(); i++)
+    for (double &val : vec)
     {
-        vec[i] = std::exp(vec[i]);
+        val = std::exp(val);
     }
 }
 
 void log_vector(std::vector<double> &vec)
 {
-    for (std::size_t i = 0; i < vec.size(); i++)
+    // for (std::size_t i = 0; i < vec.size(); i++)
+    // {
+    //     vec[i] = std::log(vec[i]);
+    // }
+
+    for (double &val : vec)
     {
-        vec[i] = std::log(vec[i]);
+        val = std::log(val);
     }
 }
 
