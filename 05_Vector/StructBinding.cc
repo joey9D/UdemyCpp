@@ -19,6 +19,7 @@ int main()
 
     for (auto &[x_, y_] : vec)
     {
+        //x_ = -2.0F;
         std::cout << x_ << " " << y_ << '\n';
     }
 
