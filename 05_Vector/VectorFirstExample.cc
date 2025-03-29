@@ -21,8 +21,8 @@ int main()
     print_vector(my_vector);
 
     my_vector.push_back(42); // add value at the end of the vector
-    print_vector(my_vector);
-
+    print_vector(my_vector); //                     |
+    //                                              V
     // remove the last value of the vector -> last in ,first out
     my_vector.pop_back();
     my_vector.pop_back();
