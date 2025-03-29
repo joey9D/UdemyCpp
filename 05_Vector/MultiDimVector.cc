@@ -13,22 +13,22 @@ int main()
     {
         for (std::size_t j = 0; j < 2; j++)
         {
-            std::cout << my_matrix2[i][j] << '\n';
+            std::cout << my_matrix2[i][j] << ' ';
         }
+        std::cout << '\n';
     }
 
     // auto my_vector =
     //     std::vector<std::vector<std::int32_t>>{{1, 2}, {3, 4}, {5, 6}};
-    auto my_vector =
-        std::vector<std::vector<std::int32_t>>(3,
-                                               std::vector<std::int32_t>(2, 0));
+    auto my_vector = std::vector<std::vector<std::int32_t>>(3, std::vector<std::int32_t>(2, 0));
 
     for (const auto &row : my_vector)
     {
         for (const auto val : row)
         {
-            std::cout << val << '\n';
+            std::cout << val << ' ';
         }
+        std::cout << '\n';
     }
 
     return 0;
