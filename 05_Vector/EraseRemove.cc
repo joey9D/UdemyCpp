@@ -6,7 +6,7 @@ void print_vector(const std::vector<int> &my_vector)
 {
     for (std::size_t i = 0; i < my_vector.size(); ++i)
     {
-        std::cout << my_vector[i] << '\n';
+        std::cout << my_vector[i] << ' ';
     }
     std::cout << '\n';
 }
@@ -29,12 +29,13 @@ int main()
     print_vector(my_vector);
     print_vector_info(my_vector);
 
+    // delete all -1 values.
     auto remove_it1 = std::remove(my_vector.begin(), my_vector.end(), -1);
+    // removable value is being moved at the end of the vector, than it will be deleted.
     my_vector.erase(remove_it1, my_vector.end());
     print_vector(my_vector);
 
-    auto remove_it2 =
-        std::remove_if(my_vector.begin(), my_vector.end(), is_negative);
+    auto remove_it2 = std::remove_if(my_vector.begin(), my_vector.end(), is_negative);
     my_vector.erase(remove_it2, my_vector.end());
     print_vector(my_vector);
 
