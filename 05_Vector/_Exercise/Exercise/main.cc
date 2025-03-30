@@ -28,6 +28,7 @@ void printVector(const VectorT &vec)
 int main()
 {
     // Exercise 1
+    // std::vector<std::vector<double>> matrix(3, std::vector<double>(3, 0.0)
     MatrixT matrix = MatrixT(3, VectorT(3, 0.0));
     for (std::size_t i = 0; i != matrix.size(); i++)
     {
