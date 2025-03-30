@@ -14,6 +14,16 @@ void printMatrix(const MatrixT &matrix)
         }
     }
     std::cout << '\n';
+
+    std::cout << "Matrix:\n";
+    for (std::size_t i = 0; i != matrix.size(); ++i)
+    {
+        for (std::size_t j = 0; j != matrix[i].size(); ++j)
+        {
+            std::cout << matrix[i][j] << ' ';
+        }
+        std::cout << '\n';
+    }
 }
 
 void printVector(const VectorT &vec)
