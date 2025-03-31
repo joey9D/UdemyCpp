@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -38,6 +39,7 @@ int write_to_bin_file(const std::string &filepath, const PlayerData &data)
     if (file.fail())
         return 1;
 
+    //    c-style casting
     file.write((char *)&data, sizeof(PlayerData));
 
     if (!file.good())
