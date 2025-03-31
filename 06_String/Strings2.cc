@@ -15,7 +15,7 @@ int main()
     const auto text = std::string{"Eins, Zwei, Drei"};
 
     const auto search_str1 = "i";
-    const auto idx1 = text.find(search_str1, 5);
+    const auto idx1 = text.find(search_str1, 5); // start search at index 5
     print_found_idx(idx1, "find");
 
     const auto search_str2 = "i";
