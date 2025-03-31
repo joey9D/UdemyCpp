@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/05_Vector/_Exercise/Exercise",
-      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/05_Vector/_Exercise/Exercise/build/Debug/outDebug"
+      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/05_Vector",
+      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/05_Vector/build/Debug/outDebug"
     }
   ]
 }
