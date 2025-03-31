@@ -7,7 +7,7 @@ int main()
 {
     //const fs::path workspace_path = "C:/Users/Jan/OneDrive/_Coding/UdemyCpp";
     fs::path chapter_path;
-    const fs::path workspace_path = "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/06_String/FileSystem1.cc";
+    const fs::path workspace_path = "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp ";
     chapter_path = workspace_path;
     chapter_path /= "06_String";
 
