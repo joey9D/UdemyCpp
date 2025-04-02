@@ -22,9 +22,11 @@ int main()
     auto search_str = "Jan";
     const auto search_it = my_map.find(search_str);
     bool found_key = search_it != my_map.end();
+    std::cout << "found_key: " << std::boolalpha << found_key << '\n';
 
     // C++20
-    // bool foud_key2 = my_map.contains(search_str);
+    bool found_key2 = my_map.contains(search_str);
+    std::cout << "foud_key: " << std::boolalpha << found_key2 << '\n';
 
     return 0;
 }
