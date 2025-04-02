@@ -27,8 +27,9 @@ void print_container(std::span<const T> span)
 {
     for (const auto val : span)
     {
-        std::cout << val << '\n';
+        std::cout << val << ' ';
     }
+    std::cout << '\n';
 }
 
 int main()
