@@ -44,6 +44,21 @@ Delete: 1.2 ms
 Sum: 527 us
 Random Index: 14750.7 ms
 = 14.478,997 ms
+
+My stats - MacOS M1
+Vector:
+Insert: 1265.6 ms
+Delete: 421.6 ms
+Sum: 508.8 us
+Random Index: 1906.8 us = 1.9068 ms
+= 1689,6156 ms
+
+List:
+Insert: 4.6 ms
+Delete: 4.8 ms
+Sum: 611.4 us
+Random Index: 1,38988e^7 us = 13 898,8 ms
+= 13 908.8114 ms
 */
 
 Container_t generate_container()
