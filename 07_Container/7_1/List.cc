@@ -45,6 +45,7 @@ int main()
         std::cout << *it_lst << ' ';
         ++it_lst;
     }
+    std::cout << '\n';
 
     return 0;
 }
