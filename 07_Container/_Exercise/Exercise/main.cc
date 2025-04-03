@@ -12,7 +12,15 @@ int main()
     // Exercise 1
     auto friends = Friends{};
 
-    // ...
+    friends["Max"] = {23, 90};
+    friends["Sam"] = {27, 80};
+    friends["Luca"] = {29, 92};
+
+    for (const auto &[pers, pair] : friends)
+    {
+        std::cout << "Friend: " << pers << " - Age: " << pair.first << ", Weight: " << pair.second << '\n';
+    }
+
 
     // Exercise 2
     const auto oldest_friend = get_oldest_friend(friends);
