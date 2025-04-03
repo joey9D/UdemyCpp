@@ -18,6 +18,13 @@ int main()
 
     std::cout << my_map["Jan"] << '\n';
 
+    auto my_map2 = std::map<std::string, std::pair<std::uint32_t, std::uint32_t>>{};
+    my_map2["Bot"] = {32, 56};
+
+    auto it = my_map2.begin();
+
+    std::cout << "Name: " << it->first << " K/D: " << it->second.first << "/" << my_map2.begin()->second.second << '\n';
+
     // C++17
     auto search_str = "Jan";
     const auto search_it = my_map.find(search_str);
