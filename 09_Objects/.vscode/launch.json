@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/Classes3",
-      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/Classes3/build/Debug/outDebug"
+      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/_Exercise1/Exercise",
+      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/_Exercise1/Exercise/build/Debug/outDebug"
     }
   ]
 }

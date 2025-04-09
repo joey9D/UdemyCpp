@@ -6,11 +6,9 @@
 #include "Image.h"
 
 Image::Image(const std::uint32_t width, const std::uint32_t height)
-    : m_width(width), m_height(height),
-      m_matrix(m_width, std::vector<std::uint8_t>(m_height, 0))
+    : m_width(width), m_height(height), m_matrix(m_width, std::vector<std::uint8_t>(m_height, 0))
 {
-    std::cout << "Image object created with shape=(" << width << "," << height
-              << ")!\n";
+    std::cout << "Image object created with shape=(" << width << "," << height << ")!\n";
 }
 
 Image::~Image()
@@ -37,12 +35,8 @@ void Image::save_image(const char *file_name) const
         }
     }
 
-    auto bmpfileheader =
-        std::array<std::uint8_t,
-                   14>{'B', 'M', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0};
-    auto bmpinfoheader =
-        std::array<std::uint8_t,
-                   40>{40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 24, 0};
+    auto bmpfileheader = std::array<std::uint8_t, 14>{'B', 'M', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0};
+    auto bmpinfoheader = std::array<std::uint8_t, 40>{40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 24, 0};
     auto bmppad = std::array<std::uint8_t, 3>{0, 0, 0};
 
     bmpfileheader[2] = static_cast<std::uint8_t>(filesize);
@@ -99,27 +93,55 @@ GrayscaleMatrix Image::get_matrix() const
     return m_matrix;
 }
 
-void Image::set_pixel(const std::uint32_t x,
-                      const std::uint32_t y,
-                      const std::uint8_t value)
+void Image::set_pixel(const std::uint32_t x, const std::uint32_t y, const std::uint8_t value)
 {
     m_matrix[x][y] = value;
 }
 
+/**
+ * @brief   The following exercises are using function
+ *          which have been learnd in the vector chapter or
+ *          standart template library chapter.
+ *          With this, you don't need to think too complicated.
+ *
+ */
+
 // Exercise 1
 void Image::clear_image()
 {
+    // wrong; idea/first thought too complex.
+    //for (auto vec :)
+    m_matrix.clear();
+    m_width = 0;
+    m_height = 0;
 }
 
 // Exercise 2
-void Image::resize_image(const std::uint32_t new_width,
-                         const std::uint32_t new_height)
+void Image::resize_image(const std::uint32_t new_width, const std::uint32_t new_height)
 {
+    if (new_width != m_width)
+    {
+        m_matrix.resize(new_width);
+        m_width = new_width;
+    }
+
+    if (new_height != m_height)
+    {
+        for (auto &col : m_matrix)
+        {
+            col.resize(new_height);
+        }
+        m_height = new_height;
+    }
 }
 
 // Exercise 3
 void Image::fill_image(const std::uint8_t value)
 {
+    for (auto &col : m_matrix)
+    {
+        std::fill(col.begin(), col.end(), value);
+    }
 }
 
 // Exercise 4
