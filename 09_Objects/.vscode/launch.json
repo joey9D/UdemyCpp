@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/VisibilityTypes2",
-      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/VisibilityTypes2/build/Debug/outDebug"
+      "cwd": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/Matrix",
+      "program": "/Users/joey/Documents/Programmieren/Cpp_Udemy/UdemyCpp/09_Objects/9_1/Matrix/build/Debug/outDebug"
     }
   ]
 }
