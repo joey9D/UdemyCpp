@@ -40,7 +40,9 @@ int main()
     }
 
     // Exercise 2
-    //std::transform(my_vector.begin(), my_vector.end(), my_result.begin(), ...);
+    std::transform(my_vector.begin(), my_vector.end(), my_result.begin(), [](const auto value) {
+        return (value * value);
+    });
 
     for (const auto &val : my_result)
     {
